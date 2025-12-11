@@ -35,13 +35,13 @@ btn.addEventListener('click', () => {
 const navegador = navigator.userAgent.toLowerCase().includes("chrome") ? "Google Chrome" : "Navegador";
 
 const logs = [
-    "Acessando Kernel...",
-    `Detectado software vulnerável: ${navegador}...`, // <--- AQUI A MÁGICA
-    "Bypassing firewall...",
-    "Baixando dados bancários...",
-    "Enviando histórico de navegação para contatos...",
-    "Formatando C:/Windows/System32...",
-    "Erro fatal detectado..."
+    "Acessando carteira com 10 BTC...",
+    `você esta sendo hackado: ...`, // <--- AQUI A MÁGICA
+    "você esta sendo hackado...",
+    "você esta sendo hackado ...",
+    "sua conta bancaria foi acessada...",
+    "peguei todo o seu dinheiro...",
+    "hahahahahahahahahahhahaahhahahaha..."
 ];
 function iniciarProtocoloCaos() {
     // 1. Muda o botão e o fundo (igual antes)
