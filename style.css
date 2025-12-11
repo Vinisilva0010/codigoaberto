@@ -1,0 +1,92 @@
+/* style.css */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Importante para não criar barras de rolagem infinitas na bagunça */
+    transition: background-color 0.2s;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+.card {
+    background: #2d2d2d;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00d4ff; /* Ciano Neon */
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.1s;
+}
+
+/* Essa classe será injetada via JS */
+.falling {
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Modo Pânico */
+.panic-mode {
+    background-color: red !important;
+    color: yellow !important;
+}
+
+/* Terminal Hacker */
+#terminal {
+    display: none; /* Começa escondido */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: black;
+    color: #00ff00;
+    font-family: monospace;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    overflow: hidden;
+    border-top: 3px solid #00ff00;
+}
+
+/* Tela Azul da Morte */
+#bsod {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000aa; /* Azul clássico do Windows */
+    color: white;
+    z-index: 10000; /* Fica acima de tudo */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.cursor-fake {
+    width: 20px;
+    position: absolute;
+    pointer-events: none; /* O clique passa através dele */
+    z-index: 10001;
+}

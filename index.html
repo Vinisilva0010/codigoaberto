@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanvexis - Acesso Restrito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Painel de Controle Zanvexis</h1>
+            <p>Acesso exclusivo para desenvolvedores autorizados.</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Segurança do Sistema</h2>
+                <p>Status: <span style="color: green">Seguro</span></p>
+                <button id="btn-fix" class="btn">Executar Diagnóstico</button>
+            </div>
+
+            <div class="card">
+                <h2>Dados Confidenciais</h2>
+                <p>Não acesse sem permissão do administrador.</p>
+            </div>
+        </main>
+        
+    </div>
+    <div id="terminal"></div>
+
+        <div id="bsod">
+            <h1>:(</h1>
+            <p>Ocorreu um problema e seu PC precisa ser reiniciado.</p>
+            <p>Estamos coletando algumas informações sobre o erro e em seguida reiniciaremos para você.</p>
+            <br>
+            <p>CÓDIGO DE PARADA: CRITICAL_PROCESS_DIED</p>
+            <p>Zanvexis_System_Failure.sys</p>
+        </div>
+    
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
